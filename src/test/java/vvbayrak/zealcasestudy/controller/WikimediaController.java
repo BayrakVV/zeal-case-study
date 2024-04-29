@@ -12,6 +12,7 @@ public class WikimediaController {
             .setBaseUri("https://api.wikimedia.org/core/v1/wikipedia/en")
             .setContentType(ContentType.JSON)
             .build();
+
     public Response searchPage(String query) {
         return given()
                 .spec(SPEC)
